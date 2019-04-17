@@ -1,0 +1,220 @@
+// section intro
+.intro{
+    .intro-container{
+        width: 100%;
+        border-bottom: solid 2px #e4e6e8;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        .intro-item{
+            .intro-icon{
+               img{
+                width: 60px;
+               }
+            }
+            .intro-text{
+                margin-top: 10px;
+                text-align: center;
+                h3{
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #000;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+// destination
+.title-packetes{
+    padding-top: 20px;
+    padding-bottom: 30px; 
+    text-align: center;
+    h1{ 
+        font-size: 35px;
+        font-weight: bold;
+    }
+    p{
+        padding-top: 25px; 
+        font-size: 17px;
+        color: #000;
+    }
+}
+.site-section{
+    .card-thumb{
+        text-align: center;
+        .view{
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+            width: 100%;
+            height: 300px;
+            img{
+                width: 100%;
+            }
+        }
+        .text-thumb{
+            padding: 15px;
+            text-align: center;
+            h6{
+                font-size: 19px;
+            }
+        }
+        h4{
+            margin-top: -15px;
+            margin-bottom: 18px;
+        }
+        .primary-btn{
+           border-radius: 50px; 
+           font-size: 15px;
+           box-shadow: 0 5px 18px rgba(0,0,0,0.30),
+        }
+    }
+}
+.why{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 113px;
+    .section_title{
+        color: #000;
+    }
+    .why-row{
+        margin-top: 100px;
+        .why_item{
+            width: 100%;
+            background: #fff;
+            &:hover, &:focus{
+                .why_icon{
+                    transition: .3s all ease;
+                    background: rgb(226, 205, 12);
+                }
+                cursor: pointer;
+                transition: .4s all ease;
+                transform: translateY(-15px);
+                box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+            }
+        }
+        .why_image{
+            width: 100%;
+            img{
+                max-width: 100%;
+            }
+        }
+        .why_content{
+            padding-top: 48px;
+	        padding-bottom: 55px;
+	        padding-left: 35px;
+            padding-right: 35px;
+            .why_title{
+                font-family: 'Oswald', sans-serif;
+	            font-size: 30px;
+	            font-weight: 500;
+	            color: #181818;
+	            line-height: 1.1;
+            }
+            .why_text{
+                margin-top: 20px;
+            }
+        }
+        .why_icon{
+            position: absolute;
+	        top: -29px;
+	        left: 50%;
+	        -webkit-transform: translateX(-50%);
+	        -moz-transform: translateX(-50%);
+	        -ms-transform: translateX(-50%);
+	        -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	        width: 73px;
+	        height: 73px;
+	        background: #f2f5f6;
+            border-radius: 50%;   
+            img{
+                max-width: 60%;
+            }  
+        }
+
+    }
+}
+.section-blog-recent{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    margin-bottom: 25px;
+    .b-entry{
+        .img-gradient{
+            position: relative;
+            margin-bottom: 30px;
+            &::before{
+                content:'';
+                position:absolute;
+                width:100%; 
+                height:100%;
+                display:inline-block;
+                background: -moz-linear-gradient(top, rgba(0,47,75,0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(220, 66, 37, 0.5)), color-stop(100%,rgba(0,47,75,0.5))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* IE10+ */
+                background: linear-gradient(to bottom, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+            }
+            img{
+                display: block;
+            }
+        }
+        h2{
+            margin-top: 18px;
+            a{
+                color: #ef6c57;
+                &:hover{
+                    color: #bb2e19;
+                }
+            }
+        }
+        .meta{
+            color: darken(#ccc, 10%);
+            font-size: 14px;
+                a{
+                   color: #ef6c57;
+                    &:hover{
+                        color: #bb2e19;
+                     } 
+                }
+        }
+        p{
+            line-height: 30px;
+        }
+    }
+    .btn_main {
+        padding: 0px 25px;
+        background: transparent;
+        display: inline-block;
+        text-align: center;
+        color: $title-color;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 48px;
+        border: 1px solid $baseColor;
+        border-radius: 0px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        @include transition();
+        cursor: pointer;
+        img {
+            position: absolute;
+            top: 50%;
+            right: -30px;
+            @include transform(translateY(-50%));
+            @include transition();
+        }
+        &:hover {
+            background: $baseColor;
+            color: $title-color;
+            border: 1px solid $baseColor;
+            img {
+                right: -38px;
+            }
+        }
+    }
+}
