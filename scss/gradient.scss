@@ -1,0 +1,5 @@
+body{
+    background-color: rgba(250,88,85,1);
+    background: @include filter-gradient(#fa5855, #fb4b5e, horizontal);
+    background: @include background-image(linear-gradient(left bottom, rgba(250,88,85,1) 0%, rgba(251,75,94,1) 15%, rgba(254,22,130,1) 76%, rgba(254,22,130,1) 79%));
+}

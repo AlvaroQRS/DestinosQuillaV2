@@ -1,29 +1,3 @@
-/*!
- * Material Design for Bootstrap 4
- * Version: MDB FREE 4.7.6
- *
- *
- * Copyright: Material Design for Bootstrap
- * https://mdbootstrap.com/
- *
- * Read the license: https://mdbootstrap.com/general/license/
- *
- *
- * Documentation: https://mdbootstrap.com/
- *
- * Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/
- *
- * Tutorials: https://mdbootstrap.com/education/bootstrap/
- *
- * Templates: https://mdbootstrap.com/templates/
- *
- * Support: https://mdbootstrap.com/support/
- *
- * Contact: office@mdbootstrap.com
- *
- * Attribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js
- *
- */
 
 @charset "UTF-8";
 
@@ -68,10 +42,15 @@
 // @import "addons/datatables-select";
 // @import "addons/directives";
 @import "theme/variables";
+@import "theme/scroll";
 @import "theme/mixins";
 @import "theme/reset";
 @import "theme/header";
 @import "theme/home";
+@import "theme/destinos";
+@import "theme/mini-destinos";
+@import "theme/blog";
+@import "theme/contacto";
 @import "theme/footer";
 // Your custom styles
 @import "custom-styles";

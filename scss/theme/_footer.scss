@@ -1,13 +1,3 @@
-@mixin gradient-background(){
-	background: rgba(46,189,196,1);
-	background: -moz-linear-gradient(-45deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(46,189,196,1)), color-stop(100%, rgba(104,229,178,1)));
-	background: -webkit-linear-gradient(-45deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
-	background: -o-linear-gradient(-45deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
-	background: -ms-linear-gradient(-45deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
-	background: linear-gradient(135deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebdc4', endColorstr='#68e5b2', GradientType=1 );
-}
 .social{
     position: relative;
 	.parallax-img {
@@ -16,7 +6,7 @@
 		background-position: center center;
 		position: relative;
 		padding: 20px;
-		@include gradient-background();
+		@include gradient-fondo();
     }
     .section_title{
         font-size: 25px;
@@ -145,6 +135,51 @@ footer{
         .social_contact{
             .number{
                 font-size: 25px;
+            }
+        }
+    }
+    .footer_info{
+        margin-top: 30px;
+        padding-top: 70px;
+        .footer_dest{
+            .title_dest{
+                color: #fff; 
+                font-size: 25px;
+            }
+            .dest_logo{
+                width: 100%;
+                img{
+                    width: 80px;
+                }
+            }
+        }
+        .questions_footer{
+            color: #fff;
+            h3{
+                font-size: 25px;
+            }
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    padding: 5px 0;
+                }
+                span{
+                    color: rgba($white, .7);
+                }
+                .icon, .text{
+                    display: table-cell;
+                    vertical-align: top;
+                }
+                .text{
+                    font-size: 17px;
+                }
+                .icon{
+                    width: 40px;
+                    font-size: 18px;
+                    padding-top: 2px;
+                    color: rgba($white, 1);
+                }
             }
         }
     }

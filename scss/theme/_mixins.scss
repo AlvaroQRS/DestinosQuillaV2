@@ -1,5 +1,11 @@
 
 //    Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
 
 @mixin transition($args: all 0.3s ease 0s) {
     -webkit-transition: $args;
@@ -145,4 +151,29 @@
       @content;
     }
   }
-  
+  // gradient mixin
+  @mixin gradient-background(){
+    background: rgba(46,189,196,1);
+    background: -moz-linear-gradient(-45deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(46,189,196,1)), color-stop(100%, rgba(104,229,178,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
+    background: linear-gradient(135deg, rgba(46,189,196,1) 0%, rgba(104,229,178,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebdc4', endColorstr='#68e5b2', GradientType=1 );
+  }
+  @mixin gradient-fondo(){
+      background: rgba(250,88,85,1);
+      background: -moz-linear-gradient(45deg, rgba(250,88,85,1) 0%, rgba(251,75,94,1) 15%, rgba(254,22,130,1) 76%, rgba(254,22,130,1) 79%, rgba(254,22,130,1) 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(250,88,85,1)), color-stop(15%, rgba(251,75,94,1)), color-stop(76%, rgba(254,22,130,1)), color-stop(79%, rgba(254,22,130,1)), color-stop(100%, rgba(254,22,130,1)));
+      background: -webkit-linear-gradient(45deg, rgba(250,88,85,1) 0%, rgba(251,75,94,1) 15%, rgba(254,22,130,1) 76%, rgba(254,22,130,1) 79%, rgba(254,22,130,1) 100%);
+      background: -o-linear-gradient(45deg, rgba(250,88,85,1) 0%, rgba(251,75,94,1) 15%, rgba(254,22,130,1) 76%, rgba(254,22,130,1) 79%, rgba(254,22,130,1) 100%);
+      background: -ms-linear-gradient(45deg, rgba(250,88,85,1) 0%, rgba(251,75,94,1) 15%, rgba(254,22,130,1) 76%, rgba(254,22,130,1) 79%, rgba(254,22,130,1) 100%);
+      background: linear-gradient(45deg, rgba(250,88,85,1) 0%, rgba(251,75,94,1) 15%, rgba(254,22,130,1) 76%, rgba(254,22,130,1) 79%, rgba(254,22,130,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa5855', endColorstr='#fe1682', GradientType=1 );
+  }
+  @mixin  gradient-list {
+	background: #0575E6;  
+	background: -webkit-linear-gradient(to right, #021B79, #0575E6); 
+	background: linear-gradient(to right, #021B79, #0575E6);
+  }
