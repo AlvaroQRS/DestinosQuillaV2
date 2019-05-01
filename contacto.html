@@ -120,20 +120,25 @@
     </section>
     <!-- End Contact section -->
     <!-- Start contact-form -->
-    <section class="mb-4 contact-form">
+    <section class="mb-4 contact-form-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mb-md-0 mb-5">
+                <div class="col-md-5 mb-md-0 mb-5 col-content-form">
+                    <div class="top-message">
+                        <h3><i class="fas fa-envelope"></i>Escribenos:</h3>
+                    </div>
                     <form class="contact-form" id="contact-form" name="contact-form" action="config/enviar.php" method="POST">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="md-form mb-0">
+                                    <i class="fas fa-user prefix grey-text"></i>
                                     <input type="text" id="name" pattern="[A-Za-z]{2-30}" name="name" class="form-control">
                                     <label for="name" class="">Nombre y Apellidos</label>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="md-form mb-0">
+                                    <i class="fas fa-envelope prefix grey-text"></i>
                                     <input type="text" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" name="email" class="form-control">
                                     <label for="email" class="">E-mail</label>
                                 </div>
@@ -142,6 +147,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
+                                    <i class="fas fa-phone prefix grey-text"></i>
                                     <input type="text" id="subject" pattern="[0-9]{9}" name="subject" class="form-control">
                                     <label for="subject" class="">Telefono</label>
                                 </div>
@@ -150,24 +156,25 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form">
+                                    <i class="fas fa-pencil-alt prefix grey-text"></i>
                                     <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                                     <label for="message">Mensaje</label>
                                 </div>
-        
                             </div>
                         </div>
                     </form>
-                    <div class="text-center text-md-left">
+                    <div class="text-center text-md-left pb-4 d-flex justify-content-center align-items-center">
                         <button class="btn btn-primary" id="enviar" onclick="validateForm()">Enviar</button>
                      </div>
                     <div class="status" id="status"></div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div id="map"></div>
+                <div class="col-12 col-md-7 col-lg-7 content-mapa">
+                    <div id="map" class="mapa pb-4"></div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- End contact-form -->
     <!-- start footer -->
     <footer class="footer">
