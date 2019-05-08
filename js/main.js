@@ -2,7 +2,12 @@
 sal();
 // wow
 new WOW().init();
-// buuton scroll
+
+AOS.init({
+	duration: 800,
+	easing: 'slide'
+});
+
 // nagnific poup
 $(document).ready(function() {
 	$('.image-popup').magnificPopup({
