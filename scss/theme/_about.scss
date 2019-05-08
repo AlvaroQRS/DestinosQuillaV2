@@ -1,0 +1,43 @@
+.content-mision{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .contenedor{
+        border-top: 4px solid $color-con;
+        border-radius: 4px;
+        padding: 15px 30px;
+        -webkit-box-shadow: 2px 2px 21px -1px rgba(0,0,0,0.28);
+        -moz-box-shadow: 2px 2px 21px -1px rgba(0,0,0,0.28);
+        box-shadow: 2px 2px 21px -1px rgba(0,0,0,0.28);
+        p{
+            text-align: justify;
+            line-height: 1.7;
+        }
+        .content_icon{
+            .icon{
+                span{
+                    color: $secondaryColor2;
+                }
+            }
+        }
+
+    }
+}
+.ftco-about{
+	.one-half{
+		width: 100%;
+		padding: 30px 15px;
+		@include media-breakpoint-up(md){
+			padding: 5% 13% 5% 5%;
+			width: 50%;
+		}
+		&.img{
+			display: block;
+			@include media-breakpoint-down(sm){
+            height: 300px;
+			}
+        }
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+	}
+}

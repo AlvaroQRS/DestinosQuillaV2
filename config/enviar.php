@@ -1,4 +1,12 @@
 <?php
+function validar_campo($campo)
+    {
+        $campo = trim($campo);
+        $campo = stripcslashes($campo);
+        $campo = htmlspecialchars($campo);
+
+        return $campo;
+    } 
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
@@ -18,17 +26,19 @@ if ($email === ''){
 }
 }
 if ($subject === ''){
-    print json_encode(array('message' => 'El telefono es olbigatorio', 'code' => 0));
+    print json_encode(array('message' => 'El telefono es obligatorio', 'code' => 0));
     exit();
 }
 if ($message === ''){
     print json_encode(array('message' => 'Mensaje obligatorio', 'code' => 0));
     exit();
 }
-$content="From: $name \nEmail: $email \nMessage: $message";
+$asunto = "Contacto"
+$content="Asunto: $contacto \nDe: $name \nEmail: $email \nFecha: ".date('d/m/Y')."\nHora".date('h:i:s a')." \nMensage: $message";
 $recipient = "info@destinosquillabamba.com";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
 print json_encode(array('message' => 'Enviado, te contactaremos lo antes posible!', 'code' => 1));
 exit();
+
 ?>

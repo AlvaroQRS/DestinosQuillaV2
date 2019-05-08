@@ -1,0 +1,141 @@
+.post-content-area{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+    @media (max-width: 1024px) {
+        margin-top: 25px;
+    }
+    @media (max-width: 990px) {
+        margin-top: 25px;
+    }
+    .tour-info{
+        .content-info{
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 5px solid $secondaryColor2;
+            -webkit-box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.22);
+            -moz-box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.22);
+            box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.22);
+            border-radius: 5px;
+            .info-title{
+                color: #000;
+                font-size: 25px;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+        }
+    }  
+    .tour-contact{
+        margin-top: 35px;
+        padding-top: 15px;
+        .form-area{
+            padding: 25px;
+            -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.3);
+            -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.3);
+            box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.3);
+            .title-info{
+                text-align: center;
+                position: relative;
+                z-index: 2;
+                margin-top: -50px;
+                background: $secondaryColor1;
+                border-radius: 3px;
+                padding: 10px 15px;
+                -webkit-box-shadow: 0px 6px 26px 2px rgba(0,0,0,0.23);
+                -moz-box-shadow: 0px 6px 26px 2px rgba(0,0,0,0.23);
+                box-shadow: 0px 6px 26px 2px rgba(0,0,0,0.23);
+                h3{
+                    color: #fff;
+                    i{
+                        padding: 0px 8px 0px 0px;
+                    }
+                }
+            }
+            .text-parraf{
+                color: #000;
+                margin-top: 30px;
+                font-weight: 400;
+            }
+            .radio-content{
+                p{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                .form-check{
+                    .form-check-input{
+                        display: none;
+                    }
+                    .form-check-label{
+                        color: $secondaryColor2;
+                        padding: 5px 15px 5px 51px;
+                        display: inline-block;
+                        position: relative;
+                        font-size: 1em;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        &:before{
+                            content: "";
+                            position: absolute;
+                            width: 18px;
+                            height: 18px;
+                            display: inline-block;
+                            background: none;
+                            border: 3px solid $secondaryColor1;
+                            border-radius: 50%;
+                            top: 7px;
+                            left: 17px;
+                        }
+                        &:hover{
+                            background: rgba(20, 125, 223, 0.4);
+                        }
+                    }
+                    .form-check-input:checked + .form-check-label{
+                        padding: 5px 15px;
+                        background: #0774d9;
+                        border-radius: 2px;
+                        color: #fff;
+                    }
+                     .form-check-input:checked + .form-check-label:before{
+                        display: none;
+                     }
+                }
+            }
+            .btn-rounded{
+                border-radius: 30px;
+            }
+        }
+        .content-info{
+        width: 100%;
+        border: 1px solid #c8caca;
+        box-shadow: 2px 2px 2px  #d3d3d2;
+        .support-info{
+            color: #000;
+            font-size: 20px;
+        }
+        ul{
+            text-align: center;
+            margin-top: 15px;
+            padding: 0;
+            list-style: none;
+            .icon{
+                margin: 0 auto;
+                font-size: 30px;
+            }
+            .icon-whatsapp{
+                color: #25d366;
+            }
+            .icon-mail2, .icon-phone{
+                color: #34b7f1;
+            }
+            .info{
+                font-size: 15px;
+                color: #000;
+            }
+            .info-number{
+                margin-top: -10px;
+            }
+        }
+    }
+    }
+
+}

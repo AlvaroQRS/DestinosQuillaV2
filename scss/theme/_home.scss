@@ -1,3 +1,10 @@
+.carousel-inner{
+    h1{
+        color: #fff;
+        font-size: 30px;
+    }
+}
+
 // section intro
 .intro{
     .intro-container{
@@ -18,6 +25,7 @@
                     font-weight: 500;
                     font-size: 20px;
                     color: #000;
+                    margin: 15px 0;
                 }
                 p{
                     font-size: 15px;
@@ -66,7 +74,14 @@
     }
     .right-content{
         .main_title{
+            margin-bottom: 15px;
             padding-right: 30px;
+            h1{
+                margin-bottom: 15px;
+            }
+            @media (max-width: 991px) {
+                text-align: center;
+            }
         }
     }
 }
@@ -131,7 +146,7 @@
             }
         }
         &:hover{
-            background: $secondaryColor;
+            background: $secondaryColor2;
             color: #fff;
             border: 1px solid transparent;
             .thumb{
@@ -167,6 +182,9 @@
 .site-section{
     .card-thumb{
         text-align: center;
+        @media(max-width: 765px){
+            margin-bottom: 35px;
+        }
         .view{
             box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
             width: 100%;
@@ -174,23 +192,29 @@
             img{
                 width: 100%;
             }
+            @media(max-width: 991px){
+                height: 100%;
+            }
         }
         .text-thumb{
             padding: 15px;
             text-align: center;
             h6{
                 font-size: 19px;
+                color: $secondaryColor2;
             }
         }
         h4{
             margin-top: -15px;
             margin-bottom: 18px;
+            color: $secondaryColor2;
         }
         .primary-btn{
            border-radius: 50px; 
            font-size: 15px;
-           box-shadow: 0 5px 18px rgba(0,0,0,0.30);
-           @include gradient-fondo(); 
+           box-shadow: 0 5px 18px rgba(179, 166, 166, 0.3);
+           background: $secondaryColor2;
+           color: #fff;
         }
     }
 }
@@ -201,8 +225,16 @@
     .section_title{
         color: #000;
     }
+
     .why-row{
         margin-top: 100px;
+        .why_col{
+            @media(max-width: 765px){
+                div:nth-child(1),  div:nth-child(2){
+                    margin-bottom: 40px;
+                }
+            }
+        }
         .why_item{
             width: 100%;
             background: #fff;
@@ -286,9 +318,9 @@
         h2{
             margin-top: 18px;
             a{
-                color: #ef6c57;
+                color: $secondaryColor2;
                 &:hover{
-                    color: #bb2e19;
+                    color: $secondaryColor1;
                 }
             }
         }
@@ -296,9 +328,9 @@
             color: darken(#ccc, 10%);
             font-size: 14px;
                 a{
-                   color: #ef6c57;
+                   color: $secondaryColor2;
                     &:hover{
-                        color: #bb2e19;
+                        color: $secondaryColor1;
                      } 
                 }
         }

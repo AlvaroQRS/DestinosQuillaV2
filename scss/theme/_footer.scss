@@ -6,7 +6,7 @@
 		background-position: center center;
 		position: relative;
 		padding: 20px;
-		@include gradient-fondo();
+		@include gradient-cyan();
     }
     .section_title{
         font-size: 25px;
@@ -72,9 +72,19 @@ footer{
     padding-top: 40px;
     padding-bottom: 50px;
     background: rgb(0, 0, 0);
+    .row_contact{
+            @media (max-width:767px ) {
+            display: flex!important;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
 }
 .footer_contact{
     .footer_contact_icon{
+        @media (max-width:767px ) {
+            margin-top: 2rem;
+        }
         width: 100%;  
         img{
             width: 50px;
@@ -157,6 +167,8 @@ footer{
             color: #fff;
             h3{
                 font-size: 25px;
+                color: #fff;
+                margin: 15px 0;
             }
             ul{
                 padding: 0;

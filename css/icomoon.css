@@ -45,6 +45,9 @@
 .icon-instagram:before {
   content: "\ea92";
 }
+.icon-whatsapp:before {
+  content: "\ea93";
+}
 .icon-twitter:before {
   content: "\ea96";
 }

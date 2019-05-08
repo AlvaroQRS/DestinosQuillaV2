@@ -13,6 +13,7 @@
   	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/component.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/flaticon.css">
   	<link rel="stylesheet" href="css/icomoon.css">
   	<link rel="stylesheet" href="css/sal.css">
@@ -29,31 +30,30 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav m-auto d-flex align-items-center">
-						<li class="nav-item">
-							<a class="nav-link" href="destinos.html">Destinos
-							</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="galeria.html">Galeria</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="videos.html">Videos</a>
-						  </li>
-						  <a href="index.html">
-							  <div class="logo">
-								  <img src="img/logo/vive disfruta viaja_1.png" class="img-fluid" alt="">
-							  </div>
-						  </a>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">Mapas</a>
-						  </li>
-						  <li class="nav-item">
-							  <a class="nav-link" href="blog">Blog</a>
-						  </li>
-						  <li class="nav-item">
-							  <a class="nav-link" href="contacto.html">contacto</a>
-						  </li>
-					</ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo/vive disfruta viaja_1.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videos.html">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">contacto</a>
+                        </li>
+                    </ul>
 				</div>
 			</div>
 		</nav>
@@ -71,7 +71,7 @@
 	<section class="overlap-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 d-flex align-self-stretch">
+				<div class="col-md-4 d-flex align-self-stretch"  data-sal-duration="1000" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-bounce">
 					<div class="d-block services text-center">
 						<div class="d-flex content_icon justify-content-center"><div class="icon"><span class="flaticon-heart"></span></div></div>
 						<div class="media-body p-2 mt-2">
@@ -80,7 +80,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 d-flex align-self-stretch">
+				<div class="col-md-4 d-flex align-self-stretch" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="250" data-sal-easing="ease-out-bounce">
 					<div class="d-block services text-center">
 						<div class="d-flex content_icon justify-content-center"><div class="icon"><span class="flaticon-user"></span></div></div>
 						<div class="media-body p-2 mt-2">
@@ -89,7 +89,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 d-flex align-self-stretch">
+				<div class="col-md-4 d-flex align-self-stretch" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
 					<div class="d-block services text-center">
 						<div class="d-flex content_icon justify-content-center"><div class="icon"><span class="flaticon-support"></span></div></div>
 						<div class="media-body p-2 mt-2">
@@ -104,14 +104,14 @@
 	<!-- Our Destination -->
 	<section class="destination">
 		<div class="container">
-			<div class="row justify-content-center pb-5">
+			<div class="row justify-content-center pb-5 wow fadeInUp">
 				<div class="col-md-12 heading-section text-center">
 					<h2 class="mb-4">Los mejores lugares para viajar</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magni vel eaque aliquam iure voluptatibus.</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -123,12 +123,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 animated wow bounceInUp" data-wow-duration="2s" data-wow-dealy="5s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -140,12 +140,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="3s" data-wow-dealy="6s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -157,12 +157,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="4s" data-wow-dealy="7s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -174,12 +174,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="2s" data-wow-dealy="5s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -191,12 +191,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="3s" data-wow-dealy="6s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -208,12 +208,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="4s" data-wow-dealy="7s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -225,12 +225,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="4.5s" data-wow-dealy="5.5s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -242,12 +242,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="2s" data-wow-dealy="5s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -259,12 +259,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="3s" data-wow-dealy="6s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -276,12 +276,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="4s" data-wow-dealy="7s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -293,12 +293,12 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp" data-wow-duration="4.5s" data-wow-dealy="5.5s">
 					<div class="thumb">
 						<div class="img">
 							<img src="img/destination.jpg" class="img-fluid" alt="">
@@ -310,7 +310,7 @@
 								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corrupti.</p>
 							</a>
 						</div>
-						<a href="img/destination.jpg" class="icon image-link d-flex justify-content-center align-items-center">
+						<a href="img/destination.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 							<span class="icon-enlarge2"></span>
 						</a>
 					</div>
@@ -336,21 +336,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-4 col-lg-4 footer_contact d-flex flex-column align-items-center justify-content-start text-center">
-				<div class="footer_contact_icon"><img src="img/svg/suitcase-1.svg" alt=""></div>
+				<div class="footer_contact_icon"><img src="img/svg/suitcase-1.svg" alt="icono-img-suicate"></div>
 				<div class="footer_contact_title"><h2>recomendaciones <br> para tu viaje</h2></div>
 				<div class="footer_contact_btn">
 					<a href="#!" class="primary-btn" >Leer más</a>
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-4 col-lg-4 footer_contact d-flex flex-column align-items-center justify-content-start text-center">
-				<div class="footer_contact_icon"><img src="img/svg/placeholder.svg" alt=""></div>
+				<div class="footer_contact_icon"><img src="img/svg/placeholder.svg" alt="icono-img-placeholder"></div>
 				<div class="footer_contact_title"><h2>como llegar  <br> a tus destinos</h2></div>
 				<div class="footer_contact_btn">
 					<a href="#!" class="primary-btn" >Leer más</a>
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-4 col-lg-4 footer_contact d-flex flex-column align-items-center justify-content-start text-center">
-				<div class="footer_contact_icon"><img src="img/svg/sun.svg" alt=""></div>
+				<div class="footer_contact_icon"><img src="img/svg/sun.svg" alt="icono-img-sun"></div>
 				<div class="footer_contact_title"><h2>mantente informado  <br> del clima</h2></div>
 				<div class="footer_contact_btn">
 					<a href="#!" class="primary-btn" >Leer más</a>
@@ -403,6 +403,8 @@
 	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/sal.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/new.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
