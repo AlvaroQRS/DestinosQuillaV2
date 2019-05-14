@@ -9494,4 +9494,21 @@ h6 {
   color: #000;
 }
 
+footer {
+  padding-top: 10px;
+  background: rgba(8, 149, 114, 0.938);
+  color: #fff;
+}
+footer .logo-footer {
+  width: 100%;
+}
+footer .logo-footer img {
+  width: 80px;
+}
+footer .logo-footer h2 {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */

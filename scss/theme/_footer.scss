@@ -43,10 +43,22 @@
         }
     }
 }
-// footer{
-//     padding-top: 10px;
-//     background: rgb(0, 0, 0);
-// }
+footer{
+    padding-top: 10px;
+    background: rgba(8, 149, 114, 0.938);
+    color: $white;
+    .logo-footer{
+        width: 100%;
+        img{
+            width: 80px;
+        }
+        h2{
+            color: $white;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
 // .footer{
 //     padding: 10px 0;
 //     background: rgba(8, 149, 114, 0.938);
