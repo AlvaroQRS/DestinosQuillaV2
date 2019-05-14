@@ -1,11 +1,55 @@
 html,
 body,
+.view {
+  height: 100%;
+}
+.carousel {
+  height: 100%;
+  .carousel-inner {
+    height: 100%;
+    .carousel-item,
+    .active {
+      height: 100%;
+    }
+  }
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top-nav-collapse {
+  background-color: rgba(17, 17, 17, 0.938);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331;
+  }
+}
+
+.page-footer {
+  background-color: #1C2331;
+}
+.container{
+	.navbar-brand{
+		display: none;
+		img{
+			width: 50px;
+		}
+		@media (max-width: 991px){
+			display: block;
+		}
+	}
+}
+html,
+body,
 header,
 .view {
   height: 100%;
 }
 
-/* Carousel*/
 .carousel,
 .carousel-item,
 .carousel-item.active {
@@ -26,8 +70,13 @@ header,
 }
 .collapse{
 	.logo{
-		margin: 0 20px;
-		width: 100px;
+		margin: 2px 20px;
+		img{
+			width: 90px;
+		}
+		@media (max-width: 991px){
+			display: none;
+		}
 	}
 }
 
@@ -35,10 +84,12 @@ h6 {
 line-height: 1.7;
 }
 
-.nav-item a{
-	font-size: 14px;
-	text-transform: uppercase;
-	&:hover{
-		color: #f8b600!important;
+.nav-item {
+	.nav-link{
+		font-size: 14px;
+		text-transform: uppercase;
+		&:hover{
+			color: #f8b600!important;
+		}
 	}
 }

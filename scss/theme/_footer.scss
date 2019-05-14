@@ -1,86 +1,13 @@
-.social{
-    position: relative;
-	.parallax-img {
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		position: relative;
-		padding: 20px;
-		@include gradient-cyan();
-    }
-    .section_title{
-        font-size: 25px;
-    }
-    li {
-		list-style: none;
-		margin: 0 10px 0 0;
-		display: inline-block;
-		a {
-			height: 50px;
-			width: 50px;
-			display: block;
-            float: left;
-            color: #fff;
-            background:none;
-            border: 1px solid #fff;			
-            border-radius: 50%;
-			position: relative;
-			span {
-				position: absolute;
-				font-size: 26px;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-        }
-    }
-        .icon-1{
-            &:hover,&:focus{
-                .icon-twitter{
-                    color:#0084b4;  
-                }
-                border: 1px solid #0084b4;  
-            }
-        }
-        .icon-2{
-            &:hover,&:focus{
-                .icon-facebook{
-                    color:#3a5795;  
-                }
-                border: 1px solid #3a5795;  
-            }
-        }
-        .icon-3{
-            &:hover,&:focus{
-                .icon-instagram{
-                    color:#8a3ab9;  
-                }
-                border: 1px solid #8a3ab9;  
-            }
-        }
-        .icon-4{
-            &:hover,&:focus{
-                .icon-youtube{
-                    color:#CC181E;  
-                }
-                border: 1px solid #CC181E;  
-            }
-        }
-        
-}
-footer{
+.bg-footer{
     padding-top: 40px;
-    padding-bottom: 50px;
-    background: rgb(0, 0, 0);
-    .row_contact{
-            @media (max-width:767px ) {
-            display: flex!important;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-    }
+    padding-bottom: 40px;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-position: center center;
 }
 .footer_contact{
+    margin-top: 20px;
     .footer_contact_icon{
         @media (max-width:767px ) {
             margin-top: 2rem;
@@ -116,83 +43,125 @@ footer{
         }
     }
 }
-.footer{
-    .row_contact{
-        margin-top: 70px;
-        .footer_logo{
-            width: 100%;
-            img{
-                width: 70px;
-            }
-        }
-        .social_footer{
-            .social_list{
-                margin: 0;
-                padding: 0;
-                li{
-                    list-style: none;
-                    text-decoration: none;
-                    display: inline-block;
-                    margin: 0 6px;
-                  a{
-                      color: #fff;
-                      font-size: 30px;
-                    }  
-                }
-            }
-            
-        }
-        .social_contact{
-            .number{
-                font-size: 25px;
-            }
-        }
-    }
-    .footer_info{
-        margin-top: 30px;
-        padding-top: 70px;
-        .footer_dest{
-            .title_dest{
-                color: #fff; 
-                font-size: 25px;
-            }
-            .dest_logo{
-                width: 100%;
-                img{
-                    width: 80px;
-                }
-            }
-        }
-        .questions_footer{
-            color: #fff;
-            h3{
-                font-size: 25px;
-                color: #fff;
-                margin: 15px 0;
-            }
-            ul{
-                padding: 0;
-                li{
-                    list-style: none;
-                    padding: 5px 0;
-                }
-                span{
-                    color: rgba($white, .7);
-                }
-                .icon, .text{
-                    display: table-cell;
-                    vertical-align: top;
-                }
-                .text{
-                    font-size: 17px;
-                }
-                .icon{
-                    width: 40px;
-                    font-size: 18px;
-                    padding-top: 2px;
-                    color: rgba($white, 1);
-                }
-            }
-        }
-    }
-}
+// footer{
+//     padding-top: 10px;
+//     background: rgb(0, 0, 0);
+// }
+// .footer{
+//     padding: 10px 0;
+//     background: rgba(8, 149, 114, 0.938);
+//     .footer_info{
+//         .footer_dest{
+//             .title_dest{
+//                 color: #fff; 
+//                 font-size: 15px;
+//             }
+//             .dest_logo{
+//                 img{
+//                     width: 40px;
+//                 }
+//             }
+//             .dest_logo_2{
+//                 width: 100%;
+//                 img{
+//                     width: 140px;
+//                 }
+//             }
+//         }
+//         .footer_social{
+//             li {
+//                 list-style: none;
+//                 margin: 0 10px 0 0;
+//                 display: inline-block;
+//                 a {
+//                     height: 30px;
+//                     width: 30px;
+//                     display: block;
+//                     float: left;
+//                     color: #fff;
+//                     background:none;
+//                     border: 1px solid #fff;			
+//                     border-radius: 50%;
+//                     position: relative;
+//                     span {
+//                         position: absolute;
+//                         font-size: 15px;
+//                         top: 50%;
+//                         left: 50%;
+//                         transform: translate(-50%, -50%);
+//                     }
+//                 }
+//             }
+//                 .icon-1{
+//                     &:hover,&:focus{
+//                         .icon-twitter{
+//                             color:#0084b4;  
+//                         }
+//                         border: 1px solid #0084b4;  
+//                     }
+//                 }
+//                 .icon-2{
+//                     &:hover,&:focus{
+//                         .icon-facebook{
+//                             color:#3a5795;  
+//                         }
+//                         border: 1px solid #3a5795;  
+//                     }
+//                 }
+//                 .icon-3{
+//                     &:hover,&:focus{
+//                         .icon-instagram{
+//                             color:#8a3ab9;  
+//                         }
+//                         border: 1px solid #8a3ab9;  
+//                     }
+//                 }
+//                 .icon-4{
+//                     &:hover,&:focus{
+//                         .icon-youtube{
+//                             color:#CC181E;  
+//                         }
+//                         border: 1px solid #CC181E;  
+//                     }
+//                 }
+//         }
+//         .questions_footer{
+//             color: #fff;
+//             @media (max-width: 767px) {
+//                 border-top: 2px solid $secondaryColor2;
+//                 margin-top: 20px;
+//             }
+//             h3{
+//                 font-size: 15px;
+//                 color: #fff;
+//                 margin: 15px 0;
+//             }
+//             ul{
+//                 padding: 0;
+//                 li{
+//                     list-style: none;
+//                     padding: 5px 0;
+//                 }
+//                 span{
+//                     color: rgba($white, .7);
+//                 }
+//                 .icon, .text{
+//                     display: table-cell;
+//                     vertical-align: top;
+//                 }
+//                 .text{
+//                     font-size: 12px;
+//                 }
+//                 .icon{
+//                     width: 40px;
+//                     font-size: 15px;
+//                     padding-top: 2px;
+//                     color: rgba($white, 1);
+//                 }
+//             }
+//         }
+//     }
+//     .copy{
+//         font-size: 12px;
+//     }
+// }

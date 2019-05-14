@@ -2,12 +2,6 @@
 sal();
 // wow
 new WOW().init();
-
-AOS.init({
-	duration: 800,
-	easing: 'slide'
-});
-
 // nagnific poup
 $(document).ready(function() {
 	$('.image-popup').magnificPopup({
@@ -44,7 +38,7 @@ $(document).ready(function() {
 	$('.map-gal').magnificPopup({
         type: 'image',
         gallery: {
-            enabled: true
+            enabled: false,
         }
 	});
   });
