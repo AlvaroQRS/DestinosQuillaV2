@@ -44,18 +44,93 @@
     }
 }
 footer{
-    padding-top: 10px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background: rgba(8, 149, 114, 0.938);
     color: $white;
-    .logo-footer{
-        width: 100%;
-        img{
-            width: 80px;
+    .footer_dest{
+        .logo-footer{
+            width: 100%;
+            img{
+               width: 50px;
+            }
         }
-        h2{
+        .title-logo{
+            color: $white;
+            font-size: 18px;
+        }
+        .slogan-footer{
+            width: 100%;
+            img{
+                width: 120px;
+            }
+        }
+    }
+    .col-social-list{
+        @media (max-width: 767px){
+            margin-top: 25px;
+            padding-top: 15px;
+        }
+        h3{
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: $white;
+            text-align: center;
+        }
+        .footer_social{
+            li{
+                margin: 0;
+                padding: 0 10px 0 0;
+                display: inline-block;
+                a{
+                    width: 30px;
+                    height: 30px;
+                    color: $white;
+                    border: 1px solid $white;
+                    display: block;
+                    float: left;
+                    border-radius: 50%;
+                    position: relative;
+                    background: none;
+                    span{
+                        position: absolute;
+                        font-size: 15px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+    .questions_footer{
+        h3{
             color: $white;
             font-size: 15px;
-            text-align: center;
+            margin-bottom: 15px;
+        }
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                padding: 5px 0;
+            }
+            span{
+                color: rgba($white, .7);
+            }
+            .icon, .text{
+                display: table-cell;
+                vertical-align: top;
+            }
+            .text{
+                font-size: 12px;
+            }
+            .icon{
+                width: 40px;
+                font-size: 15px;
+                padding-top: 2px;
+                color: rgba($white, 1);
+            }
         }
     }
 }

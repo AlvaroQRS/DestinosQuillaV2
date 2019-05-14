@@ -8630,7 +8630,8 @@ h6 {
 }
 
 .gallery_instagram {
-  padding-top: 4rem;
+  position: relative;
+  margin-top: -140px;
   padding-bottom: 4rem;
 }
 
@@ -8652,9 +8653,14 @@ h6 {
   right: 0;
   top: 0;
 }
+.site-cover .player {
+  position: absolute;
+  bottom: -250px;
+  width: 100%;
+}
 .site-cover, .site-cover .row {
-  min-height: 600px;
-  height: 100%;
+  min-height: 400px;
+  height: calc(50vh - 75px);
 }
 .site-cover h1 {
   font-weight: 700;
@@ -8665,69 +8671,6 @@ h6 {
 }
 .site-cover a, .site-cover span {
   font-size: 20px;
-}
-.site-cover button.scroll_down {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  height: 50px;
-  width: 30px;
-  bottom: 10px;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 20px;
-  cursor: pointer;
-  outline: none;
-}
-.site-cover button.scroll_down:before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: "";
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: scroll_down_btn-animation 2s infinite;
-  animation: scroll_down_btn-animation 2s infinite;
-  box-sizing: border-box;
-}
-@keyframes scroll_down_btn-animation {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes scroll_down_btn-animation {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .overlap-section .container {
@@ -9027,7 +8970,8 @@ h6 {
 }
 
 .content-mision {
-  padding-top: 4rem;
+  position: relative;
+  margin-top: -150px;
   padding-bottom: 4rem;
 }
 .content-mision .contenedor {
@@ -9070,7 +9014,8 @@ h6 {
 }
 
 .content_blog {
-  padding-top: 5rem;
+  position: relative;
+  margin-top: -180px;
   padding-bottom: 5rem;
 }
 .content_blog .col-md-4 {
@@ -9373,8 +9318,8 @@ h6 {
 }
 
 .contact-section {
-  margin: 30px 0 30px 0;
-  padding-top: 5rem;
+  position: relative;
+  margin-top: -170px;
 }
 .contact-section .contact-info p {
   font-size: 14px;
@@ -9495,20 +9440,89 @@ h6 {
 }
 
 footer {
-  padding-top: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background: rgba(8, 149, 114, 0.938);
   color: #fff;
 }
-footer .logo-footer {
+footer .footer_dest .logo-footer {
   width: 100%;
 }
-footer .logo-footer img {
-  width: 80px;
+footer .footer_dest .logo-footer img {
+  width: 50px;
 }
-footer .logo-footer h2 {
+footer .footer_dest .title-logo {
+  color: #fff;
+  font-size: 18px;
+}
+footer .footer_dest .slogan-footer {
+  width: 100%;
+}
+footer .footer_dest .slogan-footer img {
+  width: 120px;
+}
+@media (max-width: 767px) {
+  footer .col-social-list {
+    margin-top: 25px;
+    padding-top: 15px;
+  }
+}
+footer .col-social-list h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
+footer .col-social-list .footer_social li {
+  margin: 0;
+  padding: 0 10px 0 0;
+  display: inline-block;
+}
+footer .col-social-list .footer_social li a {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border: 1px solid #fff;
+  display: block;
+  float: left;
+  border-radius: 50%;
+  position: relative;
+  background: none;
+}
+footer .col-social-list .footer_social li a span {
+  position: absolute;
+  font-size: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .questions_footer h3 {
   color: #fff;
   font-size: 15px;
-  text-align: center;
+  margin-bottom: 15px;
+}
+footer .questions_footer ul {
+  padding: 0;
+}
+footer .questions_footer ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+footer .questions_footer ul span {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .questions_footer ul .icon, footer .questions_footer ul .text {
+  display: table-cell;
+  vertical-align: top;
+}
+footer .questions_footer ul .text {
+  font-size: 12px;
+}
+footer .questions_footer ul .icon {
+  width: 40px;
+  font-size: 15px;
+  padding-top: 2px;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
