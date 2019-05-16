@@ -60,11 +60,11 @@
 		}
 	}
 	&:hover{
-		color: #fff;
+		color: $white;
 		@include gradient-cyan(); 
 		transition: .4s all ease-in-out;
 		h3{
-			color: #fff;
+			color: $white;
 			transition: .4s all ease-in-out;
 		}
 		.icon{
@@ -74,7 +74,7 @@
 			}
 		}
 		p{
-			color: #fff;
+			color: $white;
 			transition: .4s all ease-in-out;
 		}
 	}

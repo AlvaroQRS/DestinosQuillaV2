@@ -8162,7 +8162,7 @@ body,
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .top-nav-collapse {
@@ -8630,8 +8630,8 @@ h6 {
 }
 
 .gallery_instagram {
-  position: relative;
-  margin-top: -140px;
+  margin-top: 20px;
+  padding-top: 3rem;
   padding-bottom: 4rem;
 }
 
@@ -8865,6 +8865,7 @@ h6 {
 
 .social-content {
   margin-top: 20px;
+  padding-top: 3rem;
   padding-top: 10px;
 }
 .social-content .title h4 {
@@ -8970,13 +8971,13 @@ h6 {
 }
 
 .content-mision {
-  position: relative;
-  margin-top: -150px;
+  margin-top: 25px;
+  padding-top: 15px;
   padding-bottom: 4rem;
 }
 .content-mision .contenedor {
   margin-top: 20px;
-  border-top: 4px solid #6b76ff;
+  border-top: 4px solid #147ddf;
   border-radius: 4px;
   padding: 15px 30px;
   -webkit-box-shadow: 2px 2px 21px -1px rgba(0, 0, 0, 0.28);
@@ -9014,8 +9015,8 @@ h6 {
 }
 
 .content_blog {
-  position: relative;
-  margin-top: -180px;
+  margin-top: 20px;
+  padding-top: 3rem;
   padding-bottom: 5rem;
 }
 .content_blog .col-md-4 {
@@ -9179,9 +9180,9 @@ h6 {
 }
 
 .post-content-area {
-  padding-top: 2rem;
+  position: relative;
   padding-bottom: 5rem;
-  margin-top: 2rem;
+  margin-top: -180px;
 }
 @media (max-width: 1024px) {
   .post-content-area {
@@ -9318,8 +9319,9 @@ h6 {
 }
 
 .contact-section {
-  position: relative;
-  margin-top: -170px;
+  margin-top: 20px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 .contact-section .contact-info p {
   font-size: 14px;
