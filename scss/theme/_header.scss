@@ -15,7 +15,7 @@ body,
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .top-nav-collapse {
@@ -60,7 +60,7 @@ header,
 }
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
-	  background: #1C2331!important;
+	  background: rgb(27, 27, 27)!important;
   }
 }
 .navbar-nav{

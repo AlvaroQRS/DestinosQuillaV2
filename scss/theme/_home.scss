@@ -38,7 +38,7 @@
 ==========================================*/
 .popular-place-area{
     padding-top: 80px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     margin-bottom: 30px;
     @media (max-width: 1024px) {
         margin-bottom: 0;
@@ -76,8 +76,8 @@
         .main_title{
             margin-bottom: 15px;
             padding-right: 30px;
-            h1{
-                margin-bottom: 15px;
+            h2{
+                margin-bottom: 20px;
             }
             @media (max-width: 991px) {
                 text-align: center;
@@ -188,7 +188,7 @@
         .view{
             box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
             width: 100%;
-            height: 300px;
+            height: 100%;
             img{
                 width: 100%;
             }
@@ -218,10 +218,12 @@
         }
     }
 }
+// destination Populares
 .why{
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 113px;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     .section_title{
         color: #000;
     }
@@ -295,7 +297,7 @@
     }
 }
 
-
+// blog Section
 .section-blog-recent{
     padding-top: 40px;
     padding-bottom: 100px;
@@ -371,6 +373,7 @@
         }
     }
 }
+// gallery Widget fotos and Videos
 .gallery_instagram{
     margin-top: 20px;
     padding-top: 3rem;

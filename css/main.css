@@ -8162,7 +8162,7 @@ body,
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .top-nav-collapse {
@@ -8209,7 +8209,7 @@ header,
 
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
-    background: #1C2331 !important;
+    background: #1b1b1b !important;
   }
 }
 .navbar-nav .nav-item {
@@ -8272,7 +8272,7 @@ h6 {
 ==========================================*/
 .popular-place-area {
   padding-top: 80px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
   margin-bottom: 30px;
 }
 @media (max-width: 1024px) {
@@ -8315,8 +8315,8 @@ h6 {
   margin-bottom: 15px;
   padding-right: 30px;
 }
-.popular-place-area .right-content .main_title h1 {
-  margin-bottom: 15px;
+.popular-place-area .right-content .main_title h2 {
+  margin-bottom: 20px;
 }
 @media (max-width: 991px) {
   .popular-place-area .right-content .main_title {
@@ -8441,7 +8441,7 @@ h6 {
 .site-section .card-thumb .view {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   width: 100%;
-  height: 300px;
+  height: 100%;
 }
 .site-section .card-thumb .view img {
   width: 100%;
@@ -8474,8 +8474,9 @@ h6 {
 
 .why {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 113px;
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .why .section_title {
   color: #000;
@@ -8660,7 +8661,7 @@ h6 {
 }
 .site-cover, .site-cover .row {
   min-height: 400px;
-  height: calc(50vh - 75px);
+  height: 30%;
 }
 .site-cover h1 {
   font-weight: 700;
@@ -9079,6 +9080,7 @@ h6 {
   color: gray;
 }
 .blog-entry .img-thumb {
+  width: 100%;
   overflow: hidden;
 }
 .blog-entry .img-thumb img {
@@ -9180,14 +9182,9 @@ h6 {
 }
 
 .post-content-area {
-  position: relative;
+  padding-top: 1.5rem;
   padding-bottom: 5rem;
-  margin-top: -180px;
-}
-@media (max-width: 1024px) {
-  .post-content-area {
-    margin-top: 25px;
-  }
+  margin-top: 20px;
 }
 @media (max-width: 990px) {
   .post-content-area {
@@ -9320,7 +9317,7 @@ h6 {
 
 .contact-section {
   margin-top: 20px;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   padding-bottom: 3rem;
 }
 .contact-section .contact-info p {
