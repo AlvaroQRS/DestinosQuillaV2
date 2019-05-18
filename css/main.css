@@ -8636,6 +8636,39 @@ h6 {
   padding-bottom: 4rem;
 }
 
+.modal-dialog .icon-modal {
+  width: 100%;
+}
+.modal-dialog .icon-modal img {
+  width: 50px;
+}
+.modal-dialog .list-title-recomend {
+  margin: 17px 0;
+}
+.modal-dialog .list-title-recomend h3 {
+  font-size: 19px;
+}
+.modal-dialog .unordered-list {
+  margin: 0;
+  padding: 0;
+}
+.modal-dialog .unordered-list li {
+  position: relative;
+  list-style: none;
+  padding-left: 30px;
+}
+.modal-dialog .unordered-list li:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #147ddf;
+  background: #147ddf;
+  top: 7px;
+  left: 0;
+  border-radius: 50%;
+}
+
 .site-cover {
   background-size: cover;
   background-repeat: no-repeat;

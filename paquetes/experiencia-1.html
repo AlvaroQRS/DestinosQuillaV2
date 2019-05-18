@@ -318,21 +318,24 @@
             </div>
         </div>
     </section>
-    <section class="bg-footer overlay"  style="background-image: url(../img/hero_bg_1.jpg); background-attachment: fixed;">
+    <!-- end section -->
+    
+    <!-- Section Recoemnd -->
+    <section class="bg-footer overlay"  style="background-image: url(../img/hero_bg_1.jpg);">
         <div class="container">
             <div class="row row_contact">
                 <div class="col-6 col-sm-6 col-lg-4 footer_contact d-flex flex-column align-items-center justify-content-start text-center">
-                    <div class="footer_contact_icon"><img src="../img/svg/suitcase-1.svg" alt="icon-suitacse"></div>
+                    <div class="footer_contact_icon"><img src="../img/svg/suitcase-1.svg" alt="icon-suitcase"></div>
                     <div class="footer_contact_title"><h2>recomendaciones <br> para tu viaje</h2></div>
                     <div class="footer_contact_btn">
-                        <a href="#!" class="primary-btn" >Leer más</a>
+                        <a href=""  data-toggle="modal" data-target="#ModalRecomend" class="primary-btn" >Leer más</a>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-lg-4 footer_contact d-flex flex-column align-items-center justify-content-start text-center">
                     <div class="footer_contact_icon"><img src="../img/svg/placeholder.svg" alt="icon-placeholder"></div>
                     <div class="footer_contact_title"><h2>como llegar  <br> a Quillabamba</h2></div>
                     <div class="footer_contact_btn">
-                        <a href="#!" class="primary-btn" >Leer más</a>
+                        <a href=""  data-toggle="modal" data-target="#ModalMap" class="primary-btn" >Leer más</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-4 footer_contact d-flex flex-column align-items-center justify-content-start text-center">
@@ -345,7 +348,9 @@
             </div>
         </div>
     </section>
-    <!-- Modal -->
+    <!-- end Section Recoemnd -->
+
+    <!-- Modal Clima-->
     <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -361,7 +366,7 @@
                     <script>
                     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
                     </script>
-              </div>
+            </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
             </div>
@@ -369,6 +374,102 @@
         </div>
     </div>
     <!-- End modal -->
+
+    <!-- Modal como llegar a Quillabamba-->
+    <div class="modal fade" id="ModalMap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center w-100" id="myModalLabel">Como llegar a Quillabamba</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="row py-3">
+                        <div class="col">
+                            <p>
+                                La Ciudad del Eterno Verano Quillabamba está ubicado hacia el Norte de la Capital Histórica del Perú Cusco a unos 222 km de distancia con un promedio de 4 horas y 55 minutos de viaje. 
+                            </p>
+                            <p>
+                                Para iniciar el viaje tenemos que dirigirnos al Terminal Terrestre Utrasic para Quillabamba, para luego abordar el ómnibus que nos llevara a nuestro destino, este terminal se encuentra en la Av. Antonio Lorena dos cuadras más abajo del Cementerio General de Almudena, u otra opción es tomar los vehículos livianos que tienen las agencias frente a este cementerio.
+                            </p>
+                            <p>
+                                En nuestra travesía atravesaremos el maravilloso Valle Sagrado de los Incas, pasando por Ollantaytambo, ciudad muy transcurrida por turistas nacionales y extranjeros que se dirigen a nuestra Maravilla Arqueológica de Machu Picchu o alrededores,  Se recomienda llevar un abrigo para el frio porque se llegara a cruzar el Abra de Málaga, el cual es el punto más alto para llegar al Valle de La Convención, donde tendremos como destino a Quillabamba la ciudad del eterno verano y capital de la Provincia de La Convención.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
+
+    <!-- Modal recomendaciones-->
+    <div class="modal fade" id="ModalRecomend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center w-100" id="myModalLabel">Recomadaciones para tu viaje</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-md-9 col-list-recomend d-flex flex-column justify-content-center">
+                            <div class="list-title-recomend"><h3>Vestimenta</h3></div>
+                            <div class="div">
+                                <ul class="unordered-list">
+                                    <li>
+                                        Independientemente de la época de visita es recomendable llevar ropa ligera y abrigadora: pantalones amplios, camisetas de algodón, zapatos de montaña, calzado deportivo. Además, no debe dejar de llevar un buen protector solar y un sombrero de ala ancha para el sol.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-title-recomend"><h3>Seguridad</h3></div>
+                            <div class="div">
+                                <ul class="unordered-list">
+                                    <li>
+                                        Siempre mantén tus objetos personales bajo tu supervisión y cuidado. Y si tomas un taxi en la calle, siempre verifica que sea un taxi autorizado o pertenezca a alguna empresa de taxis. 
+                                    </li>
+                                    <li>
+                                        Por otro lado, no llevar grandes cantidades de dinero en las excursiones por tener un riesgo de pérdida, sino será bajo su responsabilidad.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-title-recomend"><h3>Salud</h3></div>
+                            <div class="div">
+                                <ul class="unordered-list">
+                                    <li>
+                                        Durante tu viaje, hidrátate adecuadamente, sobre todo en zonas de altura. Y recuerda siempre: beber agua embotellada o debidamente tratada, y consumir alimentos en restaurantes y no en puestos ambulantes. 
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-title-recomend"><h3>Otras Recomadaciones</h3></div>
+                            <div class="div">
+                                <ul class="unordered-list">
+                                    <li>
+                                        La energía eléctrica en el Perú es de 220 voltios y 60 ciclos, en los hoteles de 3 estrellas a más podrán encontrar energía de 110 voltios. Ten cuidado, o infórmate bien, antes de conectar tus equipos a un interruptor.
+                                    </li>
+                                    <li>
+                                        Por último: En el Perú, al dejar una propina, no existe un monto obligatorio, estas dependen de la satisfacción respecto al servicio brindado o de la cortesía del viajero.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
+
     <!-- start footer -->
     <footer>
         <div class="container">
@@ -399,7 +500,7 @@
                         <div class="questions_icon">
                             <ul>
                                 <li><span class="icon icon-location2"></span>
-                                    <span class="text">Av. Bolognesi. <br>
+                                    <span class="text">Av. Francisco Bolognesi 249. <br>
                                         Quillabamba, Cusco, Perú</span>
                                 </li>
                                 <li><span class="icon icon-phone"></span>

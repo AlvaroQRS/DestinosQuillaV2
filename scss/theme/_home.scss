@@ -380,3 +380,38 @@
     padding-bottom: 4rem;
     
 }
+// modal
+.modal-dialog{
+    .icon-modal{
+        width: 100%;
+        img{
+            width: 50px;
+        }
+    }
+    .list-title-recomend{
+        margin: 17px 0;
+        h3{
+            font-size: 19px;
+        }
+    }
+    .unordered-list {
+        margin: 0;
+        padding: 0;
+        li {
+            position: relative;
+            list-style: none;
+            padding-left: 30px;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border: 3px solid $secondaryColor2;
+                background: $secondaryColor2;
+                top: 7px;
+                left: 0;
+                border-radius: 50%;
+            }
+        }
+    }
+}
