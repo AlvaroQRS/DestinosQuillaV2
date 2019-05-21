@@ -1,2 +1,5 @@
+node_modules
+minifer
 prepros-6.config
-img/mini-destinos
+package-lock.json
+postcss.config.json

@@ -37,4 +37,16 @@
 @import "free/loader";
 
 // Your custom styles
-@import "custom-styles";
+@import "theme/variables";
+@import "theme/scroll";
+@import "theme/mixins";
+@import "theme/reset";
+@import "theme/header";
+@import "theme/home";
+@import "theme/destinos";
+@import "theme/mini-destinos";
+@import "theme/about";
+@import "theme/blog";
+@import "theme/experiencias";
+@import "theme/contacto";
+@import "theme/footer";
