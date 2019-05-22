@@ -8240,6 +8240,38 @@ h6 {
   color: #f8b600 !important;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#particles-js {
+  background-image: url("../img/hero_bg_1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.found {
+  position: relative;
+  top: 30vh;
+  text-align: center;
+}
+.found h2 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 12em;
+  letter-spacing: 10px;
+}
+.found h2 i {
+  font-size: 0.8em;
+}
+.found p {
+  color: #fff;
+  font-size: 20px;
+}
+
 .carousel-inner h1 {
   color: #fff;
   font-size: 30px;
