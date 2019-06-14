@@ -8274,7 +8274,7 @@ body {
 
 .carousel-inner h1 {
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .intro .intro-container {
@@ -8717,6 +8717,7 @@ body {
 }
 .site-cover.overlay {
   position: relative;
+  width: 100%;
 }
 .site-cover.overlay:before {
   position: absolute;
@@ -8732,6 +8733,7 @@ body {
   width: 100%;
 }
 .site-cover, .site-cover .row {
+  width: 100%;
   min-height: 400px;
   height: 30%;
 }
@@ -9173,14 +9175,14 @@ body {
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
+.section-blog-single p {
+  color: #000;
+}
 .section-blog-single .thumb {
   padding-bottom: 15px;
 }
 .section-blog-single .thumb .title-blog {
   margin-bottom: 25px;
-}
-.section-blog-single .thumb p {
-  font-weight: 400;
 }
 .section-blog-single .top-border {
   border-top: 2px solid #147ddf;
@@ -9199,12 +9201,14 @@ body {
 .section-blog-single .top-border .figure .text-muted {
   padding: 5px 0;
 }
-.section-blog-single .top-border .post-text {
-  margin-top: -10px;
+.section-blog-single .top-border .posts-text .tags {
+  color: #f64a56;
+  font-size: 19px;
+  text-transform: capitalize;
+  font-weight: 600;
 }
-.section-blog-single .top-border .post-text p {
-  font-size: 17px;
-  font-weight: 400;
+.section-blog-single .top-border .posts-text .bold {
+  font-weight: 600;
 }
 .section-blog-single .top-border h4 {
   font-size: 18px;
@@ -9251,6 +9255,42 @@ body {
 .section-blog-single .single-side-bar .single-post-list .details a {
   color: #000;
   font-weight: 600;
+}
+.section-blog-single .video {
+  width: 100%;
+}
+.section-blog-single .video iframe {
+  width: 80%;
+}
+
+.social-share {
+  margin-bottom: 1rem;
+}
+.social-share .social {
+  margin-left: 20px;
+}
+.social-share .social .social-facebook {
+  padding: 13px 25px;
+  background: #3b5998;
+  color: #ffffff;
+}
+.social-share .social .social-facebook:hover {
+  background: #204eb1;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+.social-share .social i {
+  padding: 0px 8px 0px 0px;
+}
+.social-share .social .social-twitter {
+  padding: 13px 25px;
+  background: #00acee;
+  color: #ffffff;
+}
+.social-share .social .social-twitter:hover {
+  background: #2386ad;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
 }
 
 .post-content-area {

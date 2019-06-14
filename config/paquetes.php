@@ -30,8 +30,8 @@ if ($radio === 'false') {
     print json_encode(array('message' => 'marque la opcion de telefono o correo', 'code' => 0));
     exit();
 }
-$asunto = "Experiencias"
-$content="Asunto: $contacto \nDe: $name \nEmail: $email \nFecha: ".date('d/m/Y')."\nHora".date('h:i:s a')." \nMensage: $message";
+$asunto = "Experiencias";
+$content="Asunto: $asunto \nDe: $name \nEmail: $email \nFecha: ".date('d/m/Y')."\nHora".date('h:i:s a')."\nTelefono: $subject"." \nMensage: $message"."\nOpción: $radio";
 $recipient = "info@destinosquillabamba.com";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");

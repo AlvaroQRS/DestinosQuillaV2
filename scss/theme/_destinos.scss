@@ -6,6 +6,7 @@
 	position: relative;
 	&.overlay{
 		position: relative;
+		width: 100%;
 		&:before{
 			position: absolute;
 			content: "";
@@ -21,6 +22,7 @@
 		width: 100%;
 	}
 	&, .row{
+		width: 100%;
 		min-height: 400px;
 		height: 30%;
 	}

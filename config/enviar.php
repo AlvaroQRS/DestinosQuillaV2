@@ -33,8 +33,8 @@ if ($message === ''){
     print json_encode(array('message' => 'Mensaje obligatorio', 'code' => 0));
     exit();
 }
-$asunto = "Contacto"
-$content="Asunto: $contacto \nDe: $name \nEmail: $email \nFecha: ".date('d/m/Y')."\nHora".date('h:i:s a')." \nMensage: $message";
+$asunto = "Contacto";
+$content="Asunto: $asunto \nDe: $name \nEmail: $email \nFecha: ".date('d/m/Y')."\nHora: ".date('h:i:s a')." \nMensage: $message";
 $recipient = "info@destinosquillabamba.com";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
